@@ -5,9 +5,9 @@ spring:
 
   datasource:
     driver-class-name: com.mysql.cj.jdbc.Driver  # MySQL driver
-    url: jdbc:mysql://localhost:3306/athlete_db  # MySQL connection URL (update with your DB name)
+    url: jdbc:mysql://localhost:3306/wellness_db  # MySQL connection URL (update with your DB name)
     username: root                               # MySQL username
-    password: your_password                      # MySQL password
+    password: pass@word1                      # MySQL password
 
   jpa:
     hibernate:
@@ -16,7 +16,7 @@ spring:
     properties:
       hibernate:
         format_sql: true                         # Format SQL queries for better readability
-    database-platform: org.hibernate.dialect.MySQLDialect  # MySQL dialect for Hibernate
+#    database-platform: org.hibernate.dialect.MySQLDialect  # MySQL dialect for Hibernate
 
 # Server port configuration
 server:
