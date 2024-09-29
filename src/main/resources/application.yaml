@@ -4,10 +4,10 @@ spring:
     name: AthleteWellnessService
 
   datasource:
-    driver-class-name: com.mysql.cj.jdbc.Driver  # MySQL driver
+#    driver-class-name: com.mysql.cj.jdbc.Driver  # MySQL driver
     url: jdbc:mysql://localhost:3306/wellness_db  # MySQL connection URL (update with your DB name)
     username: root                               # MySQL username
-    password: pass@word1                      # MySQL password
+    password: manager                      # MySQL password
 
   jpa:
     hibernate:
@@ -16,7 +16,7 @@ spring:
     properties:
       hibernate:
         format_sql: true                         # Format SQL queries for better readability
-#    database-platform: org.hibernate.dialect.MySQLDialect  # MySQL dialect for Hibernate
+        dialect: org.hibernate.dialect.MySQLDialect  # MySQL dialect for Hibernate
 
 # Server port configuration
 server:
@@ -30,6 +30,7 @@ eureka:
     register-with-eureka: true
   instance:
     prefer-ip-address: false
+#    hostname: localhost
 
 
 #spring:
